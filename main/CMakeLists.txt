@@ -1,0 +1,12 @@
+idf_component_register(SRCS "main.c"
+                            "hardware.c"
+                            "utils.c"
+                            "leds.c"
+                            "buzzer.c"
+                            "seletor.c"
+                            "botao.c"
+                            "produtos.c"
+                            "persistencia.c"
+                            "vending.c"
+                       INCLUDE_DIRS "."
+                       PRIV_REQUIRES esp_driver_gpio esp_driver_ledc esp_adc esp_timer nvs_flash)
